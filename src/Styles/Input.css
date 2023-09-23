@@ -1,0 +1,11 @@
+.title{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 6% 27%;
+    border: 1px solid;
+    border-radius: 10px;
+}
