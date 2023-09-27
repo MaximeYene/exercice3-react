@@ -15,18 +15,19 @@ setInputValue("");
 
    return (
     <div>
-        <h1 className="title">Exercice3 React</h1>
-        <p className="title-explication">Le but de cet exercice est de créer avec React une action qui lorsqu'on clique sur le bouton <strong>Afficher</strong> renvoie la valeur de l'input dans la div à coté.</p>
+        <h1 className="title">To-Do List</h1>
     <div className="container">
         <div className="container-form">
+            <h2>To-Do App!</h2>
+            <h4>Add new To-Do</h4>
             <form onSubmit={handleClick}>
             <input type="text" value={inputValue} onChange={(event)=>setInputValue(event.target.value)} required/><br/>
-            <button >Ajouter</button>
+            <button >Add</button>
             </form>
            
         </div>
         <div className="container-output">
-            <p>Listage des donnees :</p>
+            <p>Let's get some work done!</p>
             <ul>
                 {list.map((mot)=>(
                     <li>{mot}</li>
